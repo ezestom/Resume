@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+	width: auto;
+}
+a {
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+}
+a {
+	color: #408de6;
+}
+a:hover {
+	color: #9947eb;
+}
+
+button {
+	border: none;
+	padding: 3px;
+	background-color: transparent;
+	border: 1px solid #262626;
+	border-radius: 8px;
+
+}
+
+.btn2 {
+	position: fixed;
+	right: 1%;
+	bottom: 2%;
+}
+i {
+	font-size: 1rem;
+	padding: 0 1px 0 0;
+}
+p,
+li {
+	line-height: 1.25rem;
+	max-width: 110ch;
+	font-size: 0.85rem;
+	display: flex;
+	align-items: center;
+}
+.navbar li {
+	font-size: 0.85rem;
+}
+
+h1 {
+	font-size: 2rem;
+	font-family: "Oswald", sans-serif;
+	font-weight: 400;
+	padding-block: 1%;
+}
+h5 {
+	font-size: 1.35rem;
+	font-family: "Oswald", sans-serif;
+	font-weight: 400;
+	padding-block: 7px;
+}
+h6 {
+	font-size: 1rem;
+	font-family: "Oswald", sans-serif;
+	font-weight: 400;
+	padding-block: 2px;
+	padding-left: 2%;
+}
+p {
+	font-size: 0.9rem;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+}
+html {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+body{
+	padding: 1% 2% ;
+	font-family: "Roboto", sans-serif;
+
+}
+
+.desactive {
+	color: #262626;
+	background: #fffffe;
+	transition: all 1s ease-in-out;
+	
+}
+
+.active {
+	transition: all 1s ease-in-out;
+	background-color: #262626;
+	color: #fffffe;
+}
+
+.container {
+	width: 100%;
+}
+
+ul {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.projects {
+	display: flex;
+	align-items: center;
+}
+.projects a {
+	padding-left: 2px;
+}
+.achieved {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.achieved li {
+	padding-left: 3%;
+}
+.skills-box-div {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	width: 100%;
+}
+.skills-box {
+	display: flex;
+	flex-direction: row;
+}
+.skills-box-div li {
+	display: flex;
+	align-items: center;
+	line-height: 1.25rem;
+}
+.skills {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.education-ul {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.education-ul > li > a{
+	font-size: 1rem;
+	font-weight: 500;
+
+}
+
+
+/* button */
+#checkbox {
+	display: none;
+	
+ }
+ 
+ .switch {
+	position: fixed;
+	top: 1%;
+	right: 1%;
+	width: 35px;
+	height: 35px;
+	background-color: rgb(99, 99, 99);
+	border-radius: 50%;
+	z-index: 1;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid rgb(126, 126, 126);
+	box-shadow: 0px 0px 3px rgb(2, 2, 2) inset;
+ }
+ 
+ .powersign {
+	position: relative;
+	width: 50%;
+	height: 50%;
+	border: 4px solid rgb(48, 48, 48);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
+ 
+ .powersign::before {
+	content: "";
+	width: 8px;
+	height: 100%;
+	background-color: rgb(99, 99, 99);
+	position: absolute;
+	top: -60%;
+	z-index: 2;
+ }
+ 
+ .powersign::after {
+	content: "";
+	width: 4px;
+	height: 100%;
+	background-color: rgb(48, 48, 48);
+	position: absolute;
+	top: -60%;
+	z-index: 3;
+ }
+ 
+ #checkbox:checked + .switch .powersign {
+	border: 4px solid rgb(255, 255, 255);
+	box-shadow: 0px 0px 10px rgb(151, 243, 255),
+	  0px 0px 5px rgb(151, 243, 255) inset;
+ }
+ 
+ #checkbox:checked + .switch .powersign::after {
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 0px 5px rgb(151, 243, 255);
+ }
+ 
+ #checkbox:checked + .switch {
+	box-shadow: 0px 0px 1px rgb(151, 243, 255) inset,
+	  0px 0px 2px rgb(151, 243, 255) inset,
+	  0px 0px 10px rgb(151, 243, 255) inset,
+	  0px 0px 40px rgb(151, 243, 255),
+	  0px 0px 100px rgb(151, 243, 255),
+	  0px 0px 5px rgb(151, 243, 255);
+	border: 2px solid rgb(255, 255, 255);
+	background-color: rgb(146, 180, 184);
+ }
+ 
+ #checkbox:checked + .switch .powersign::before {
+	background-color: rgb(146, 180, 184);
+ }
+ 
+ 
