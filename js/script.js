@@ -4,7 +4,7 @@ window.addEventListener('load', function() {
 
    setTimeout(function() {
      window.location.href = 'index2.html';
-   }, 7000); // 5000 milisegundos = 5 segundos
+   }, 7000); //8 segundos
  });
 
 
