@@ -35,20 +35,21 @@ i {
 p,
 li {
 	line-height: 1.25rem;
-	max-width: 110ch;
+	max-width: 93ch;
 	font-size: 0.85rem;
 	display: flex;
 	align-items: center;
 }
 .navbar li {
-	font-size: 0.85rem;
+	font-size: 0.75rem;
+	font-weight: 500;
 }
 
 h1 {
 	font-size: 2rem;
 	font-family: "Oswald", sans-serif;
 	font-weight: 400;
-	padding-block: 1%;
+	padding-top: 1%;
 }
 h5 {
 	font-size: 1.35rem;
@@ -73,24 +74,28 @@ html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: #2b2c28;
 }
 body{
-	padding: 1% 2% ;
+	margin: 2%;
+	padding: 3% ;
 	font-family: "Roboto", sans-serif;
 	max-width: 100vw;
-
+	background-color: #fffffe;
 }
 
 .desactive {
 	color: #262626;
 	background: #fffffe;
 	transition: all 1s ease-in-out;
+	border: 1px solid transparent;
 	
 }
 
 .active {
 	transition: all 1s ease-in-out;
-	background-color: #262626;
+	background-color: #2b2c28;
+	border: 1px solid #fffffe;
 	color: #fffffe;
 }
 
@@ -146,7 +151,7 @@ ul {
 	align-items: flex-start;
 }
 .education-ul > li > a{
-	font-size: 1rem;
+	font-size: .9rem;
 	font-weight: 500;
 
 }
@@ -160,7 +165,7 @@ ul {
  
  .switch {
 	position: fixed;
-	top: 1%;
+	top: 3%;
 	right: 1%;
 	width: 35px;
 	height: 35px;
