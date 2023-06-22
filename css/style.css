@@ -21,8 +21,9 @@ a {
 	padding: 2px;
 }
 a:hover {
+	background-color: rgba(153, 71, 235, 0.1); 
 	color: #9947eb;
-	border: 1px solid #9947eb;
+	border: 1px solid #9947eb;	
 	border-radius: 3px;
 	padding: 2px;
 	transition: all .2s ease-in-out;

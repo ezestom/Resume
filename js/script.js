@@ -1,9 +1,13 @@
-// Esperar a que se cargue la página completamente
-window.addEventListener('load', function() {
-   // Esperar 7 segundos y luego cambiar a la segunda vista
- 
+ // cambiar a modo oscuro
+ window.addEventListener('load', function() {
 
-   setTimeout(function() {
-     window.location.href = 'index2.html';
-   }, 7000); //7 segundos
- });
+   function toggleClass() {
+      const myBody = document.querySelector("body");
+      myBody.classList.toggle("active");
+      myBody.classList.toggle("desactive");
+    }
+    
+    const myButton = document.getElementById("checkbox");
+    myButton.addEventListener("click", toggleClass);
+    
+})
