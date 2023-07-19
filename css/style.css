@@ -22,20 +22,19 @@ a {
 	font-weight: 500;
 }
 a:hover {
-	background-color: rgba(153, 71, 235, 0.1); 
+	background-color: rgba(153, 71, 235, 0.1);
 	color: #9947eb;
-	border: 1px solid #9947eb;	
+	border: 1px solid #9947eb;
 	border-radius: 3px;
 	padding: 2px;
-	transition: all .2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
-a:active{
+a:active {
 	color: #f45d48;
 	border: 1px solid #f45d48;
 	border-radius: 3px;
 	padding: 2px;
-	transition: all .2s ease-in-out;
-
+	transition: all 0.2s ease-in-out;
 }
 
 i {
@@ -48,7 +47,6 @@ li {
 	max-width: 90ch;
 	font-size: 0.85rem;
 	text-align: start;
-
 }
 .navbar li {
 	font-size: 0.7rem;
@@ -86,9 +84,9 @@ html {
 	align-items: center;
 	background-color: #303030;
 }
-body{
+body {
 	margin: 3rem;
-	padding: 4% ;
+	padding: 4%;
 	font-family: "Roboto", sans-serif;
 	max-width: 100vw;
 	background-color: #fffffe;
@@ -99,7 +97,6 @@ body{
 	background: #fffffe;
 	transition: all 1s ease-in-out;
 	border: 1px solid transparent;
-	
 }
 
 .active {
@@ -119,7 +116,7 @@ ul {
 	flex-wrap: wrap;
 }
 
-.projects {
+.projects > p {
 	display: flex;
 	align-items: center;
 }
@@ -160,20 +157,17 @@ ul {
 	flex-direction: column;
 	align-items: flex-start;
 }
-.education-ul > li > a{
-	font-size: .9rem;
+.education-ul > li > a {
+	font-size: 0.9rem;
 	font-weight: 500;
-
 }
-
 
 /* button */
 #checkbox {
 	display: none;
-	
- }
- 
- .switch {
+}
+
+.switch {
 	position: fixed;
 	top: 1rem;
 	right: 1rem;
@@ -188,9 +182,9 @@ ul {
 	justify-content: center;
 	border: 1px solid rgb(126, 126, 126);
 	box-shadow: 0px 0px 3px rgb(2, 2, 2) inset;
- }
- 
- .powersign {
+}
+
+.powersign {
 	position: relative;
 	width: 50%;
 	height: 50%;
@@ -199,9 +193,9 @@ ul {
 	display: flex;
 	align-items: center;
 	justify-content: center;
- }
- 
- .powersign::before {
+}
+
+.powersign::before {
 	content: "";
 	width: 8px;
 	height: 100%;
@@ -209,9 +203,9 @@ ul {
 	position: absolute;
 	top: -60%;
 	z-index: 2;
- }
- 
- .powersign::after {
+}
+
+.powersign::after {
 	content: "";
 	width: 4px;
 	height: 100%;
@@ -219,30 +213,28 @@ ul {
 	position: absolute;
 	top: -60%;
 	z-index: 3;
- }
- 
- #checkbox:checked + .switch .powersign {
+}
+
+#checkbox:checked + .switch .powersign {
 	border: 4px solid rgb(255, 255, 255);
 	box-shadow: 0px 0px 10px rgb(151, 243, 255),
-	  0px 0px 5px rgb(151, 243, 255) inset;
- }
- 
- #checkbox:checked + .switch .powersign::after {
+		0px 0px 5px rgb(151, 243, 255) inset;
+}
+
+#checkbox:checked + .switch .powersign::after {
 	background-color: rgb(255, 255, 255);
 	box-shadow: 0px 0px 5px rgb(151, 243, 255);
- }
- 
- #checkbox:checked + .switch {
+}
+
+#checkbox:checked + .switch {
 	box-shadow: 0px 0px 1px rgb(151, 243, 255) inset,
-	  0px 0px 2px rgb(151, 243, 255) inset,
-	  0px 0px 10px rgb(151, 243, 255) inset,
-	  0px 0px 40px rgb(151, 243, 255),
-	  0px 0px 100px rgb(151, 243, 255),
-	  0px 0px 5px rgb(151, 243, 255);
+		0px 0px 2px rgb(151, 243, 255) inset,
+		0px 0px 10px rgb(151, 243, 255) inset, 0px 0px 40px rgb(151, 243, 255),
+		0px 0px 100px rgb(151, 243, 255), 0px 0px 5px rgb(151, 243, 255);
 	border: 2px solid rgb(255, 255, 255);
 	background-color: rgb(146, 180, 184);
- }
- 
- #checkbox:checked + .switch .powersign::before {
+}
+
+#checkbox:checked + .switch .powersign::before {
 	background-color: rgb(146, 180, 184);
- }
+}
