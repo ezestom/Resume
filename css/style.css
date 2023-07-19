@@ -19,6 +19,7 @@ a {
 	border: 1px solid transparent;
 	border-radius: 3px;
 	padding: 2px;
+	font-weight: 500;
 }
 a:hover {
 	background-color: rgba(153, 71, 235, 0.1); 
@@ -44,10 +45,10 @@ i {
 p,
 li {
 	line-height: 1.25rem;
-	max-width: 93ch;
+	max-width: 90ch;
 	font-size: 0.85rem;
-	display: flex;
-	align-items: center;
+	text-align: start;
+
 }
 .navbar li {
 	font-size: 0.7rem;
